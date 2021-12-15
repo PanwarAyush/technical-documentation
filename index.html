@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Documentation Page</title>
+    <link rel="stylesheet" href="technical.css">
+</head>
+<main id="main-doc">
+    <nav id="navbar">
+        <header><b><h1>Introduction to python</h1></b></header>
+        <a class="nav-link" href="#1"><strong> Important Characters and Sets of Characters</strong></a>
+        <br>
+        <hr>
+        <a class="nav-link" href="#2"><strong>
+         Order of operations
+      </strong></a>
+        <br>
+        <hr>
+        <a class="nav-link" href="#3"><strong>
+         Variable Names
+      </strong></a>
+        <br>
+        <hr>
+        <a class="nav-link" href="#4"><strong>
+         Six Steps to Defining a Function
+      </strong></a>
+        <br>
+        <hr>
+        <a class="nav-link" href="#5"><strong>
+        Integers and Strings
+      </strong></a>
+        <br>
+        <hr>
+        <a class="nav-link" href="#6"><strong>
+       Calling Methods
+      </strong></a>
+        <br>
+        <hr>
+        <a class="nav-link" href="#7"><strong>
+       Conditionals and Branching
+      </strong></a>
+        <br>
+        <hr>
+        <a class="nav-link" href="#8"><strong>
+        String operators
+      </strong></a>
+        <br>
+        <hr>
+        <a class="nav-link" href="#9"><strong>
+        String Indexing and Slicing
+      </strong></a>
+        <br>
+        <hr>
+        <a class="nav-link" href="#10"><strong>
+       String Methods
+      </strong></a>
+        <br>
+        <hr>
+        <a class="nav-link" href="#11"><strong>
+        For loops
+      </strong></a>
+        <br>
+        <hr>
+        <a class="nav-link" href="#12"><strong>
+        Lists
+      </strong></a>
+        <br>
+        <hr>
+        <a class="nav-link" href="#13"><strong>
+      While Loops
+      </strong></a>
+        <br>
+        <hr>
+        <a class="nav-link" href="#14"><strong>
+        Global and Local Variables
+      </strong></a>
+        <br>
+        <hr>
+        <a class="nav-link" href="#15"><strong>
+        Dictionaries
+      </strong></a>
+        <br>
+    </nav>
+    <section id="1" class="main-section">
+        <header><u>Basic Python Revision Notes</u></header>
+        <p></p>
+        <p></p>
+        <code></code>
+        <h4>
+            <h1>Important Characters and Sets of Characters</h1>
+        </h4>
+        <b><ol>
+          <li>tab -> \t</li>
+          <li> new line  ->  \n</li>
+   <li>backslash  -> \\</li>
+          <li>string   ->  " " or ' '</li>
+          <li>docstring  ->   """ """</li>
+          <li>comparison operators ->    == , < , > , <= , >= , !=</li>
+            <li>Python type boolean  ->   True  , False.</li>
+  <li>Logical operators -> not , and , or</li>
+            </ol></b>
+    </section>
+
+    <section id="2" class="main-section">
+        <header align="center">
+            <h1>Order of operations</h1>
+        </header>
+        <p></p>
+        <p></p>
+        <table class="op">
+            <tr>
+                <td><b>Operator</b></td>
+                <td><b>Description</b></td>
+            </tr>
+            <tr>
+                <td><b>()</b></td>
+                <td><b>Parentheses (grouping)</b></td>
+            </tr>
+            <tr>
+                <td><b>f(args...)</b></td>
+                <td><b> Function call</b></td>
+            </tr>
+            <tr>
+                <td><b>x[index:index]</b></td>
+                <td><b>Slicing</b></td>
+            </tr>
+            <tr>
+                <td>
+                    <b>x[index] Subscription</b></td>
+                <td>
+                    <b>x.attribute Attribute reference</b></td>
+            </tr>
+            <tr>
+                <td><b>**</b></td>
+                <td><b>Exponentiation</b></td</tr>
+                    <tr>
+                        <td><b>+x,-x</b></td>
+                        <td><b>Positive, negative</b></td>
+                    </tr>
+                    <tr>
+                        <td><b>*, /, %</b></td>
+                        <td> <b>Multiplication, division, remainder</b></td>
+                        <tr>
+                            <td><b>+, -</b></td>
+                            <td><b> Addition, subtraction</b></td>
+                        </tr>
+                        <tr>
+                            <td><b>
+  in, not in, is, is not, <, <=, >, >=,
+      <>, !=, ==</b></td>
+                            <td>
+                                <b>Comparisons, membership, identity</b></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <b> not x</b></td>
+                            <td> <b>Boolean NOT</b></td>
+                            <tr>
+                                <td><b>and</b></td>
+                                <td><b> Boolean AND</b></td>
+                            </tr>
+                            <tr>
+                                <td><b>or</b></td>
+                                <td><b>Boolean OR</b></td>
+                            </tr>
+                        </tr>
+        </table>
+        <code></code>
+    </section>
+
+    <section id="3" class="main-section">
+        <header>
+            <h1>Variable Names</h1>
+        </header>
+        <p></p>
+        <p></p>
+        <ul>
+            <li>
+                <h4> case sensitive</h4>
+            </li>
+            <li>
+                <h4>cannot start with a number(ex, 1_assd is not allowed)</h4>
+            </li>
+        </ul>
+        <code></code>
+        <code></code>
+    </section>
+
+    <section id="4" class="main-section">
+        <header>
+            <h1><b>Six Steps to Defining a Function</b></h1>
+        </header>
+        <ul>
+            <li> <b>What should your function do? Type a couple of example calls.</b></li>
+            <li> <b>Pick a meaningful name (often a verb or verb phrase): What is a short answer to "What does
+    your function do"?</b></li>
+            <li><b> Decide how many parameters the function takes and any return values</b></li>
+            <li><b>Describe what your function does and any parameters and return values in the docstring</b></li>
+            <li> <b>Write the body of the function</b></li>
+            <li> <b>Test your function. Think about edge cases.</b></li>
+            <p></p>
+            <p></p>
+            <code></code>
+    </section>
+
+    <section id="5" class="main-section">
+        <header>
+            <h1><b>Integers and Strings</b></h1>
+        </header>
+        <p></p>
+        <p></p>
+        <code>>>> int(45)<br>
+  45<br>
+  >>> int('45')<br>
+  45<br>
+  >>> str(45)<br>
+  '45'<br>
+  >>> str('45')<br>
+  '45'<br>
+  >>> int(str(45))<br>
+          45</br>
+  </code>
+    </section>
+    <section id="6" class="main-section">
+        <header align="center">
+            <h1><b>Calling Methods</b></h1>
+        </header>
+        <code><b>module_name.function_name(x)</b></code><br>
+        <code><b> math.sqrt(x)</b></code><br>
+        <code><b>random.randrange(2,5)</b></code>
+    </section>
+    <section id="7" class="main-section">
+        <header>
+            <h1>Conditionals and Branching</h1>
+        </header>
+        <ol>
+            <b><li>if</li></b>
+            <b><li>elif</li></b>
+            <b><li>else</li></b>
+        </ol>
+        <p><b><i>We have a boolean logic expression for if which works when the Boolean evaluates to True</i></b></p>
+    </section>
+    <section id="8" class="main-section">
+        <header>
+            <h1>String operators</h1>
+        </header>
+        <table class="op">
+            <tr>
+                <td>
+                    Description
+                </td>
+                <td>
+                    Operator
+                </td>
+                <td>
+                    Example
+                </td>
+                <td>
+                    Output
+                </td>
+            </tr>
+            <tr>
+                <td> equality</td>
+                <td> ==</td>
+                <td>'cat' == 'cat'</td>
+                <td>True</td>
+            </tr>
+            <tr>
+                <td>inequality</td>
+                <td>!=</td>
+                <td>'cat' != 'Cat'</td>
+                <td> True</td>
+            </tr>
+            <tr>
+                <td>less than</td>
+                <td>
+                    <</td>
+                        <td> 'A'
+                            < 'a'</td>
+                                <td> True</td>
+            </tr>
+            <tr>
+                <td>greater than</td>
+                <td> ></td>
+                <td>'a'> 'A'</td>
+                <td>True</td>
+            </tr>
+            <tr>
+                <td>less than or equal</td>
+                <td>
+                    <=< /td>
+                        <td>'a'
+                            <='a' </td>
+                                <td>True</td>
+            </tr>
+            <tr>
+                <td>greater than or equal</td>
+                <td>>=</td>
+                <td> 'a' >= 'A' </td>
+                <td>True</td>
+            </tr>
+            <tr>
+                <td>contains</td>
+                <td>in</td>
+                <td> 'cad' in 'abracadabra'</td>
+                <td>True</td>
+            </tr>
+            <tr>
+                <td>length of str s</td>
+                <td> len(s)</td>
+                <td> len("abc")</td>
+                <td> 3</td>
+            </tr>
+        </table>
+    </section>
+    <section id="9" class="main-section">
+        <h1> String Indexing and Slicing</h1>
+        <h4>(s[a:b] means index a to length (b-a) or a to b index but not including b)</h4>
+        <ul>
+            <li>s[2:3]</li>
+            <li> s[0]</li>
+            <li> s[:5]</li>
+            <li>s[4:]</li>
+        </ul>
+
+        <p class="op">String is immutable (ex. s[4]='a' will not replace 'a' and index 4 of s)
+        </p>
+    </section>
+    <section id="10" class="main-section">
+        <h1>String Methods</h1>
+        <ul>
+            <li>A method is a function inside of an object.</li>
+            <li> The general form of a method call is:
+                <ol>
+                    <li> object.method(arguments)</li>
+                    <li> dir(str)</li>
+                    <li> help(str.method)</li>
+                </ol>
+            </li>
+    </section>
+    <section id="11" class="main-section">
+        <header>
+            <h1>For Loops</h1>
+        </header>
+        <h4>A for loop is used for iterating over a sequence (that is either a list, a tuple, a dictionary, a set, or a string). This is less like the for keyword in other programming languages, and works more like an iterator method as found in other object-orientated
+            programming languages. With the for loop we can execute a set of statements, once for each item in a list, tuple, set etc.</h4>
+        <h4>Print each fruit in a fruit list:</h4>
+        <code><br>fruits = ["apple", "banana", "cherry"]<br>
+  for x in fruits:
+    <br>&ensp; print(x)</code>
+    </section>
+    <section id="12">
+        <header>
+            <h1> Lists</h1>
+        </header>
+        <h4> Like for strings, slicing and indexing can also be used for lists List = ['a','b',1]</h4>
+        <ol>
+            <li>length of list len(list)</li>
+            <li>smallest element in list min(list)</li>
+            <li>largest element in list max(list)</li>
+            <li>sum of elements of list (where list items must be numeric) sum(list)</li>
+        </ol>
+    </section>
+    <section id="13" class="main-section">
+        <h1> While Loops</h1>
+        <code>
+   <br>i = 0
+  while i < len(s) and not (s[i] in 'aeiouAEIOU'):<br>&ensp;
+   print(s[i])<br>&ensp;
+   i = i + 1
+    <br>
+  for char in s:<br>&ensp;
+   if not (char in 'aeiouAEIOU'):<br>&ensp;
+   print(char)</code>
+        <p><b>The difference between the two is that the for loop looks at every character in s, but the while
+  loop ends as soon a vowel is found. So the loops differ on any string where a consonant follows a
+  vowel. while is an if statement in motion. It is a repeated loop until the boolean test evaluates to
+    False.</b></p>
+    </section>
+    <section id="14" class="main-section">
+        <p>
+            <h1>Global and Local Variables</h1>
+            <h3>
+                Variables defined outside functions are global variables. Their values may be accessed inside functions without declaration. To modify to a global variable inside a function, the variable must be declared inside the function using the keyword global.</h3>
+        </p>
+        <code><br>def x():&ensp;<br>
+   global num<br>
+   &ensp;num = 5<br>
+  def y():<br>&ensp;
+   num = 4<br>
+  >>> num = 7<br>
+  >>> print (num)<br>
+  7<br>
+  >>> x()<br>
+  >>> print (num)<br>
+  5<br>
+  >>> y()<br>
+  >>> print (num)<br>
+    5</code>
+    </section>
+    <section id="15" class="main-section">
+        <h1>Dictionaries</h1>
+
+        <h2>The values of a dictionary can be of any type, but the keys must be of an immutable data type such as strings, numbers, or tuples.</h2>
+        <ul>
+            <li>keys can be numbers, strings, Booleans</li>
+            <ol>
+                <li>
+                    a list is unhashable in a dictionary (cannot be used as a key)</li>
+                <li>
+                    a tuple is hashable in a dictionary (can be used as a key).</li>
+            </ol>
+            <li>values can be dicts, strings, numbers, booleans, lists</li>
+        </ul>
+        <code><br>for key in my_dict:<br>&ensp;
+   value = my_dict[key]<br>
+    this is same as:<br> &ensp;
+    for key, value in my_dict.items():</code>
+    </section>
+</main>
+
+</html>
